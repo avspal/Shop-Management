@@ -1,0 +1,29 @@
+﻿.mainmenu{
+    width:120px;
+    height:30px;
+    color:#000;
+    padding-top:10px;
+    font:14px arial,inherit,verdana;
+}
+.mainmenu:hover{
+    background-color:#808080;
+    width:120px;
+    height:30px;
+    color:#fff;
+    padding-top:10px;
+    font:14px arial,inherit,verdana;
+}
+.secondlevel {
+    font:14px arial,inherit,verdana;
+    background-color:aqua;
+    width:135px;
+    line-height:35px;
+    padding-left:10px;
+}
+.secondlevel:hover{
+    font:14px arial,inherit,verdana;
+    background-color:aqua;
+    width:135px;
+    line-height:35px;
+    padding-left:10px;
+}
