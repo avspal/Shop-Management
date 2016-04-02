@@ -1,0 +1,102 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Home.master.cs" Inherits="Home" %>
+
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="cc1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/Site.css" />
+    <link rel="stylesheet" type="text/css" href="css/Main.css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style2 {
+            height: 316px;
+            width: 1291px;
+        }
+        .auto-style3 {
+            height: 203px;
+            width: 1291px;
+        }
+    p.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	}
+        .auto-style4 {
+            width: 1291px;
+        }
+    </style>
+</head>
+<body>
+    
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+    <table cellpadding="0" cellspacing="0" class="auto-style1" style="background-color: #CCCCCC">
+        <tr>
+            <td class="auto-style3" style="vertical-align:top; text-align: center;">
+                <p class="MsoNormal" style="color: #000066">
+                    <b style="mso-bidi-font-weight:normal"><span style="font-size:72.0pt;line-height:115%">Cheap Store<o:p></o:p></span></b></p>
+                <p class="MsoNormal" style="color: #000066">
+                    <b style="mso-bidi-font-weight:normal"><span style="font-size:28.0pt;line-height:115%">National Institute of Technology , Arunachal Pradesh<o:p></o:p></span></b></p>
+                <p class="MsoNormal">
+                    <o:p></o:p>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style2" height="100px" style="vertical-align:top; text-align: left;">
+                <br />
+                <asp:Image ID="img_photo" runat="server" Height="144px" Width="130px" />
+            &nbsp;&nbsp;<br />
+                &nbsp;<asp:Label ID="lbl_user" runat="server" Font-Bold="True" Font-Names="Kristen ITC" Font-Size="Large" ForeColor="#990033"></asp:Label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" Font-Bold="True" Font-Names="Maiandra GD" Font-Size="Medium" BackColor="#E3EAEB" DynamicHorizontalOffset="2" ForeColor="#666666" StaticSubMenuIndent="10px">
+                    <DynamicHoverStyle BackColor="#666666" ForeColor="White" />
+                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <DynamicMenuStyle CssClass="secondlevel" BackColor="#E3EAEB" />
+                    <DynamicSelectedStyle BackColor="#1C5E55" />
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/mainpsge.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/addproduct.aspx" Text="Add Product" Value="Add Product"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/productstatus.aspx" Text="Product Status" Value="Product Status"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/sales.aspx" Text="Sales Report" Value="Sales Report"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Signin.aspx" Text="Sign Out" Value="Sign Out"></asp:MenuItem>
+                    </Items>
+                    <StaticHoverStyle BackColor="#666666" ForeColor="White" />
+                    <StaticMenuItemStyle CssClass="mainmenu" HorizontalPadding="5px" VerticalPadding="2px" />
+                    <StaticSelectedStyle BackColor="#1C5E55" />
+                </asp:Menu>
+                </td>
+        </tr>
+        <tr>
+            <td height="500px" style="vertical-align:top" class="auto-style4">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td height="100px" class="auto-style4"><b style="mso-bidi-font-weight:normal"><span style="font-size:16.0pt;line-height:115%;font-family:&quot;Maiandra GD&quot;,&quot;sans-serif&quot;;
+mso-fareast-font-family:Calibri;mso-fareast-theme-font:minor-latin;mso-bidi-font-family:
+&quot;Times New Roman&quot;;mso-bidi-theme-font:minor-bidi;mso-ansi-language:EN-IN;
+mso-fareast-language:EN-US;mso-bidi-language:AR-SA">Quick Links : </span>
+                <asp:LinkButton ID="LinkButton1" runat="server" Font-Bold="True" Font-Names="Maiandra GD" ForeColor="#000066" PostBackUrl="~/team.aspx">Web Team</asp:LinkButton>
+                <cc1:AnimationExtender ID="LinkButton1_AnimationExtender" runat="server" Enabled="True" TargetControlID="LinkButton1">
+                </cc1:AnimationExtender>
+&nbsp;|&nbsp; </b>
+                <asp:LinkButton ID="LinkButton2" runat="server" Font-Bold="True" Font-Names="Maiandra GD" PostBackUrl="http://www.nitap.in">NIT,AP Home</asp:LinkButton>
+            </td>
+        </tr>
+    </table>
+    
+    </form>
+    
+</body>
+</html>
